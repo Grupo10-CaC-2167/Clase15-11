@@ -1,7 +1,5 @@
-from src.util import replaceSpaceByGuion, puntosSubcampeon
-from src.util import mayusculasPorMinusculas
-from src.util import sustituyeIndiceConLetra
-from src.util import capitalizacion
+from src.util import replaceSpaceByGuion, puntosSubcampeon, mayusculasPorMinusculas
+from src.util import sustituyeIndiceConLetra, capitalizacion, conteoChar, trianguloDeNumeros
 
 #Inicializo variables
 string = input("Ingrese una frase: ")
@@ -39,7 +37,8 @@ else:
     print("La puntuación del subcampeon es: ", puntuaciones[-2])
 
 #Probando ejercicio extra  a)
-
-
+empresa = conteoChar(string)
 
 #Probando ejercicio extra b)
+entero = int(input("Ingrese numero entero: "))
+trianguloDeNumeros(entero)

@@ -31,11 +31,7 @@ def puntosSubcampeon():
     puntuaciones.sort()
     return puntuaciones
 
-
-
-
-
-#Ejercicio Extra a): Extra: Escribir una funcion que recibe un numero entero y imprima por salida estandar(usando print) un 
+#Ejercicio Extra a): Escribir una funcion que recibe un numero entero y imprima por salida estandar(usando print) un 
 # triangulo de numeros de altura igual al numero ingresado. Ej. Si se ingresa el numero 5, debe imprimir:
 '''
 1
@@ -44,16 +40,18 @@ def puntosSubcampeon():
 4444
 55555
 '''
+def trianguloDeNumeros(entero):
+    for i in range(entero):
+        print(str(i+1)*(i+1))
 
-
-
-#Ejercicio Extra b): Escribir una funcion que reciba un string(el cual representara el nombre de una empresa) y devuelve por salida estandar(usando print) los 3 caracteres mas usados en un orden descendiente. Ejemplo. "Codo a Codo" Debe imprimir:
+#Ejercicio Extra b): Escribir una funcion que reciba un string(el cual representara el nombre de una empresa) y 
+# devuelve por salida estandar(usando print) los 3 caracteres mas usados en un orden descendiente. 
+# Ejemplo. "Codo a Codo" Debe imprimir:
 '''
 o 4
 c 2
 d 2
 '''
-
 def conteoChar(empresa):
 	empresa = str(empresa).lower()
 	e = empresa.replace(" ", "")
